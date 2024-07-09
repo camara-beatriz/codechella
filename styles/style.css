@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:wght@400;500;600;700;800&display=swap');
+@import url('./header.css');
+@import url('./footer.css');
+@import url('./banner.css');
+@import url('./container.css');
+@import url('./button.css');
+@import url('./line-up.css');
+@import url('./accordion.css');
+@import url('./form.css');
+@import url('./ticket.css');
+
+:root {
+    --color-blue: #2E7BA2;
+    --color-mustard: #DF9010;
+    --color-light-blue: #C8DEEF;
+    --color-coral: #FBF0DD;
+    --color-salmon: #FACF9D;
+    --color-gradient: linear-gradient(180deg, #BFDAE6 0%, #FCF0DD 50%, #FACF9D 100%);
+    --color-white: #FFFFFF;
+    --color-gray: #444444;
+
+    --font-title: 'Calistoga', cursive;
+    --font-text: 'Raleway', sans-serif;
+}
+
+body {
+    font-family: var(--font-text);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-gray);   
+}
+
+.background-gradient {
+    background: var(--color-gradient);
+}
+
+button,
+fieldset,
+input,
+legend,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}

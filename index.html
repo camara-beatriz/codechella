@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeChella</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.svg">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">        
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="navbar">
+        <a href="./index.html"><img src="../images/Logo.svg" alt="Logo da CodeChella"></a>
+
+        <!-- MENU HAMBURGUER -->        
+        <div class="navbar__menu">
+            <input type="checkbox" id="menu" class="navbar__menu-button">
+            <label for="menu">
+                <span class="navbar__menu-hamburguer"></span>
+            </label>
+            <ul class="navbar__menu-list">
+                <li class="navbar__menu-item"><a href="./pages/experiencia.html" class="navbar__menu-link">A experiência</a></li>
+                <li class="navbar__menu-item ruler"></li>
+                <li class="navbar__menu-item"><a href="./pages/mapa.html" class="navbar__menu-link">Mapa de Setores</a></li>
+                <li class="navbar__menu-item ruler"></li>
+                <li class="navbar__menu-item"><a href="./pages/informacoes.html" class="navbar__menu-link">Informações</a></li>
+                <li class="navbar__menu-item ruler"></li>
+                <li class="navbar__menu-item"><a href="./pages/comprar-ingresso.html" class="navbar__menu-link">Ingresso</a></li>
+            </ul>
+        </div> 
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- BANNER -->
+        <section class="banner banner-index">
+            <h1 class="banner__title">Boas-vindas ao #CodeChella2023!</h1>
+        </section>
+
+        <div class="background-gradient">
+            <!-- SEÇÃO DATAS -->
+            <section class="container">
+                <img src="./images/crowd.png" alt="Pessoas se divertindo no festival." class="container__image">
+                <div class="container__content">
+                    <h2 class="container__content-title">&lt; 11 e 12 de Março &gt; <br>Aluródromo de São Paulo</h2>
+                    <p class="container__content-text">Hora de programar nossa memória com novas lembranças! 
+                        Uma nova experiência sobre música, linguagens e, claro, tecnologia! Somos um festival diverso, com vários artistas e referências. Divirta-se!</p>
+                    <!-- BOTÃO TICKET  -->
+                    <a href="./pages/comprar-ingresso.html" class="select-button">
+                        Comprar ingresso!
+                        <img src="./images/local_activity.svg" alt="" aria-hidden="true" class="select-button__image">
+                    </a>   
+                </div>
+            </section>
+
+            <!-- LISTA DE ATRAÇÕES - SEÇÃO -->
+            <section class="line-up"> 
+
+                <h2 id="line_up" class="line-up__title">/Line-Up/</h2>
+
+                <!-- LISTA DE ATRAÇÕES - SÁBADO -->
+                <div class="line-up__container">
+                    
+                    <h3 class="line-up__container-title">SÁBADO &lt;11/03&gt;</11></h3>
+                        
+                    <p class="line-up__main-band">System of a DOM</p>
+                    <ul class="line-up__bands-list-big">
+                        <li class="line-up__bands-item">Python Maiden</li>
+                        <li class="line-up__bands-item">Apollo Client 2001</li>
+                        <li class="line-up__bands-item">Bon Java</li>
+                        <li class="line-up__bands-item">NickCallback</li>
+                    </ul>
+                    <ul class="line-up__bands-list-medium">
+                        <li class="line-up__bands-item">Linkin Promises</li>
+                        <li class="line-up__bands-item">Fullstack Fighters</li>
+                        <li class="line-up__bands-item">Papa React</li>
+                        <li class="line-up__bands-item">Angular in Chains</li>
+                    </ul>
+                    <ul class="line-up__bands-list-small">
+                        <li class="line-up__bands-item">Agnostic Front-end</li>
+                        <li class="line-up__bands-item">SlipkNode</li>
+                        <li class="line-up__bands-item">Pink Flutter</li>
+                        <li class="line-up__bands-item">Kiss</li>
+                    </ul>
+                </div>
+
+                <!-- LISTA DE ATRAÇÕES - DOMINGO -->
+                <div class="line-up__container">
+                    <div class="line-up__decoration">
+                        <span class="decoration__line"></span>
+                        <h3 class="line-up__container-title">DOMINGO &lt;12/03&gt;</12></h3>
+                        <span class="decoration__line"></span>
+                    </div>
+                    <p class="line-up__main-band">Lana Del Ploy</p>
+                    <ul class="line-up__bands-list-big">
+                        <li class="line-up__bands-item">Dua Lib</li>
+                        <li class="line-up__bands-item">The Backnd</li>
+                        <li class="line-up__bands-item">CSS Styles</li>
+                        <li class="line-up__bands-item">DJ Query</li>
+                        <li class="line-up__bands-item">ArrayAna Grande</li>
+                    </ul>
+                    <ul class="line-up__bands-list-medium">
+                        <li class="line-up__bands-item">Miley Cypress</li>
+                        <li class="line-up__bands-item">The Bootstrap Boys</li>
+                        <li class="line-up__bands-item">Json Derulo</li>
+                        <li class="line-up__bands-item">CloudPlay</li>
+                        <li class="line-up__bands-item">Dev Lovato</li>
+                    </ul>
+                    <ul class="line-up__bands-list-small">
+                        <li class="line-up__bands-item">Kylie MiLOG</li>
+                        <li class="line-up__bands-item">Jenkins Brothers</li>
+                        <li class="line-up__bands-item">Rubycat Dolls</li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <!-- BANNER FINAL  -->
+            <section class="banner-last"></section>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="contact-us">
+            <a href="./index.html"><img src="../images/Logo2.svg" alt="Logo da CodeChella"></a>        
+            <div class="contact-us__social-media">
+                <p class="contact-us__title">Acesse nossas redes:</p>
+                <ul class="contact-us__list"> 
+                    <li class="contact-us__item"><a href="#" class="contact-us__link"><img src="./images/whatsapp.svg" alt="Logo do Whatsapp" class="contact-us__link-image"></a></li>
+                    <li class="contact-us__item"><a href="#" class="contact-us__link"><img src="./images/twitch.svg" alt="Logo do Twitch" class="contact-us__link-image"></a></li>
+                    <li class="contact-us__item"><a href="#" class="contact-us__link"><img src="./images/instagram.svg" alt="Logo do Instagram" class="contact-us__link-image"></a></li>
+                    <li class="contact-us__item"><a href="#" class="contact-us__link"><img src="./images/twitter.svg" alt="Logo do Twitter" class="contact-us__link-image"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contact-us disclaimer">
+            <p class="contact-us__text">Desenvolvido por Alura.</p>
+            <p class="contact-us__text">Projeto fictício sem fins comerciais.</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>

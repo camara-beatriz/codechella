@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresso Comprado</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.svg">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    
+      <!-- HEADER -->
+      <header class="navbar">
+        <a href="../index.html"><img src="../images/Logo.svg" alt="Logo da CodeChella"></a>
+
+        <!-- MENU HAMBURGUER -->        
+        <div class="navbar__menu">
+            <input type="checkbox" id="menu" class="navbar__menu-button">
+            <label for="menu">
+                <span class="navbar__menu-hamburguer"></span>
+            </label>
+            <ul class="navbar__menu-list">
+                <li class="navbar__menu-item"><a href="./experiencia.html" class="navbar__menu-link">A experiência</a></li>
+                <li class="navbar__menu-item ruler"></li>
+                <li class="navbar__menu-item"><a href="./mapa.html" class="navbar__menu-link">Mapa de Setores</a></li>
+                <li class="navbar__menu-item ruler"></li>
+                <li class="navbar__menu-item"><a href="./informacoes.html" class="navbar__menu-link">Informações</a></li>
+                <li class="navbar__menu-item ruler"></li>
+                <li class="navbar__menu-item"><a href="./comprar-ingresso.html" class="navbar__menu-link">Ingresso</a></li>
+            </ul>
+        </div> 
+    </header>
+
+    <!-- MAIN  -->
+    <main>
+
+        <!-- BANNER -->
+        <section class="banner banner-ingresso">
+           <h1 class="banner__title">Seu ingresso está aqui!</h1>
+       </section>
+
+       <!-- CONTENT -->
+       <div class="background-gradient container__ticket">
+            
+             <div>
+                <h2 class="container__content-title sector-title">Uhul, agora sim! Seu ingresso está aqui, apresente na entrada do evento e divirta-se!</h2>
+             </div>
+
+            <!-- TICKET -->        
+
+             <div class="container ticket__content  background-gradient">
+                <div class="ticket__logo">
+                    <img src="../images/Logo2.svg" alt="Logo do evento." class="logo">
+                    <img src="../images/Logo3.png" class="logo">
+                </div>
+
+                <img src="../images/QRCode.svg" alt="QR code do ticket." class="ticket__QR">
+
+                <div class="ticket__content-info">
+                    <h3 id="name"></h3>
+                    <p>Ingresso Cortesia</p>
+                    <p id="ticket-type"></p>
+                    <p>Data: 11/03</p>
+                    <p>Local: São Paulo-SP</p>
+                </div>
+            </div>   
+                
+            
+       </div>
+   </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="contact-us">
+            <a href="../index.html"><img src="../images/Logo2.svg" alt="Logo da CodeChella"></a>           
+            <div class="contact-us__social-media">
+                <p class="contact-us__title">Acesse nossas redes:</p>
+                <ul class="contact-us__list"> 
+                    <!-- <li class="contact-us__item">Acesse redes:</li> -->
+                    <li class="contact-us__item"><a href="#" class="contact-us__link"><img src="../images/whatsapp.svg" alt="Logo do Whatsapp" class="contact-us__link-image"></a></li>
+                    <li class="contact-us__item"><a href="#" class="contact-us__link"><img src="../images/twitch.svg" alt="Logo do Twitch" class="contact-us__link-image"></a></li>
+                    <li class="contact-us__item"><a href="#" class="contact-us__link"><img src="../images/instagram.svg" alt="Logo do Instagram" class="contact-us__link-image"></a></li>
+                    <li class="contact-us__item"><a href="#" class="contact-us__link"><img src="../images/twitter.svg" alt="Logo do Twitter" class="contact-us__link-image"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contact-us disclaimer">
+            <p class="contact-us__text">Desenvolvido por Alura.</p>
+            <p class="contact-us__text">Projeto fictício sem fins comerciais.</p>
+        </div>
+
+    </footer>
+    
+    <script>
+        const name = localStorage.getItem('name');
+        const ticketType = localStorage.getItem('type');
+        document.getElementById('name').textContent = name;
+        document.getElementById('ticket-type').textContent = ticketType;
+
+    </script>
+</body>
+</html>

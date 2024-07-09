@@ -1,0 +1,123 @@
+.line-up {
+    text-align: center;
+}
+
+.line-up__title {
+    font-family: var(--font-title);
+    font-size: 48px;
+    font-weight: 400;
+    padding: 2rem 1.5rem;
+}
+
+.line-up__container {
+    padding: 3rem 1.5rem;
+}
+
+.line-up__container li {
+    padding: 0.5rem 0;
+}
+
+.line-up__container-title {
+    display: inline-block;  
+    font-family: var(--font-title);
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--color-white);
+    padding: 1rem 1rem;
+    background-color: var(--color-mustard);     
+}
+
+.line-up__main-band {
+    font-size: 48px;
+    font-weight: 800;   
+    padding-top: 3rem; 
+}
+
+.line-up__bands-list-big {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 2rem;
+}
+
+.line-up__bands-list-medium {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 2rem 0;
+}
+
+.line-up__bands-list-small {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 32px;
+}
+
+/* TABLET SCREEN  */
+@media screen and (min-width: 768px) {
+    .line-up__title {
+        font-size: 64px;
+    }
+
+    .line-up__container {
+        padding: 3rem 3.75rem;
+    }
+
+    .line-up__container-title {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        font-size: 48px;
+        padding: 1.5rem 1rem;       
+        width: fit-content;
+        position: relative;
+    }
+
+    .line-up__container-title::before, .line-up__container-title::after {
+        content: "";
+        position: absolute;
+        width: 84px;
+        height: 2px;
+        background: var(--color-mustard);
+        left: -100px;
+        top: 50%;
+        transform: translatey(-50%);
+    }
+      
+    .line-up__container-title:after {
+        left: unset;
+        right: -100px;
+    }
+   
+}
+
+/* DESKTOP SCREEN  */
+@media screen and (min-width: 1440px) {
+    .line-up__container {
+        padding: 3.5rem 7.5rem;
+    }
+
+    .line-up__container-title::before, .line-up__container-title::after {
+        content: "";
+        position: absolute;
+        width: 360px;
+        height: 2px;
+        background: var(--color-mustard);
+        left: -400px;
+        top: 50%;
+        transform: translatey(-100%);
+    }
+
+    .line-up__container-title:after {
+        left: unset;
+        right: -400px;
+    }
+}

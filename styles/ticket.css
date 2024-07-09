@@ -1,0 +1,86 @@
+.container__ticket {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2.375rem;
+    gap: 2rem;
+}
+
+
+.ticket__content {
+    padding: 2rem;
+   
+}
+
+.ticket__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 4.44rem;
+    
+}
+
+.logo {
+    height: 32px;
+}
+
+.ticket__QR {
+    height: 190px;
+    padding: 2rem 0rem;
+}
+
+.ticket__content-info {
+    text-align: center;
+}
+
+.ticket__content-info h3 {
+    font-size: 32px;
+    font-weight: 700; 
+}
+
+.ticket__content-info p {
+    font-size: 20px;
+    padding-top: 1rem;
+}
+
+/* TABLET SCREEN  */
+@media screen and (min-width: 768px) {
+    .ticket__QR {
+        height: 310px;
+    }
+    .ticket__logo {
+        column-gap: 27.18rem;
+    }
+}
+
+/* DESKTOP SCREEN  */
+@media screen and (min-width: 1440px) {
+    .container__ticket {
+        padding: 4rem 20.25rem;
+    }
+
+    .ticket__logo {
+        grid-area: logo;
+        column-gap: 36.18rem;
+    }
+
+    .ticket__QR {
+        grid-area: qrcode;
+        justify-self: start;
+    }
+
+    .ticket__content-info {
+        grid-area: info;
+        justify-self: start;
+    }
+
+    .ticket__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "logo logo logo logo"
+            "qrcode info info ."; 
+    }
+}

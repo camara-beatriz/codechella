@@ -1,0 +1,72 @@
+.banner-index {
+    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/Banner.jpeg");
+}
+
+.banner-experiencia {
+    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/BannerExp.png");
+}
+
+.banner-mapa {
+    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/BannerSetores.png");
+}
+
+.banner-info {
+    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/BannerInfo.png");
+}
+
+.banner-comprar {
+    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/BannerGaranta.png");
+}
+
+.banner-ingresso {
+    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/BannerIngresso.png");
+}
+
+.banner {   
+    
+    background-size: cover;
+    background-position: center;
+    height: 270px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner__title {
+    font-family: var(--font-title);
+    font-size: 32px;
+    line-height: 1.3em;
+    text-align: center;
+    width: 271px;
+    padding: 1.3em;
+}
+
+.banner-last {
+    background: url('../images/LastBanner.png');
+    height: 338px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;     
+}
+
+/* TABLET SCREEN */
+@media screen and (min-width: 768px) {
+    .banner {
+        height: 384px;
+    }
+
+    .banner__title {
+        font-size: 64px;
+        width: 542px;
+    }
+}
+
+/* DESKTOP SCREEN */
+@media screen and (min-width: 1440px) {
+    .banner {
+        height: 407px;
+    }
+}

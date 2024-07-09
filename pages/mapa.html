@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Setores</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.svg">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+     <!-- HEADER -->
+     <header class="navbar">
+        <a href="../index.html"><img src="../images/Logo.svg" alt="Logo da CodeChella"></a>
+
+        <!-- MENU HAMBURGUER -->        
+        <div class="navbar__menu">
+            <input type="checkbox" id="menu" class="navbar__menu-button">
+            <label for="menu">
+                <span class="navbar__menu-hamburguer"></span>
+            </label>
+            <ul class="navbar__menu-list">
+                <li class="navbar__menu-item"><a href="./experiencia.html" class="navbar__menu-link">A experiência</a></li>
+                <li class="navbar__menu-item ruler"></li>
+                <li class="navbar__menu-item"><a href="./mapa.html" class="navbar__menu-link">Mapa de Setores</a></li>
+                <li class="navbar__menu-item ruler"></li>
+                <li class="navbar__menu-item"><a href="./informacoes.html" class="navbar__menu-link">Informações</a></li>
+                <li class="navbar__menu-item ruler"></li>
+                <li class="navbar__menu-item"><a href="./comprar-ingresso.html" class="navbar__menu-link">Ingresso</a></li>
+            </ul>
+        </div> 
+    </header>
+
+    <!-- MAIN  -->
+    <main>
+
+        <!-- BANNER -->
+        <section class="banner banner-mapa">
+           <h1 class="banner__title">Mapa de Setores</h1>
+       </section>
+
+       <div class="background-gradient">
+
+            <!-- SEÇÃO MAPA  -->
+            <section class="container map">
+                <img src="../images/MapaSetores.png" alt="Mapa dos setores." class="map__image">  
+                <div class="container__content">
+                    <h3 class="container__content-title">Legenda:</h3>
+                    <ul class="map__legend">
+                        <li><span class="legend__color legend-one"></span>Pista Premium</li>
+                        <li><span class="legend__color legend-two"></span>Pista Comum</li>
+                        <li><span class="legend__color legend-three"></span>Cadeiras térreo</li>
+                        <li><span class="legend__color legend-four"></span>Cadeiras superiores</li>
+                        <li><span class="legend__color legend-five"></span>Rampas</li>
+                    </ul>
+                </div>
+            </section>
+
+            <h2 class="container__content-title sector-title">Mais detalhes sobre os setores:</h2>
+
+            <div class="sector">
+                <section class="container sector__container">
+                    <img src="../images/Mapa1.png" alt="Pessoas se divertindo no festival." class="sector__image">
+                    <div class="container__content">
+                        <h2 class="container__content-title">Pista</h2>
+                        <p class="container__content-text">Pista convencional, atendida pelos bares e banheiros das laterais do estádio. 
+                            Espaço amplo, com local para sentar e descansar. Separada da pista premium por uma grade.
+                        </p>                    
+                    </div>
+                </section>
+
+                <section class="container sector__container pista-premium">
+                    <img src="../images/Mapa2.png" alt="Imagem distante do palco." class="sector__image">
+                    <div class="container__content">
+                        <h2 class="container__content-title">Pista Premium</h2>
+                        <p class="container__content-text">Pista mais próxima do palco, com acesso muito próximo a banheiros e bares num
+                            raio de 100m. Todas as pessoas idosas e/ou com deficiência têm direito a acesso gratuito a essa área.
+                        </p>                     
+                    </div>
+                </section>
+
+                <section class="container sector__container">
+                    <img src="../images/Mapa3.png" alt="Pessoas se divertindo no festival." class="sector__image">
+                    <div class="container__content">
+                        <h2 class="container__content-title">Cadeiras</h2>
+                        <p class="container__content-text">
+                            Opção de cadeiras térreas ou elevadas. Acesso próximo a banheiros e bares, visão um pouco elevada
+                            em relação às pistas.
+                        </p>                    
+                    </div>
+                </section>
+
+            </div>
+
+       </div>
+
+   </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="contact-us">
+            <a href="../index.html"><img src="../images/Logo2.svg" alt="Logo da CodeChella"></a>          
+            <div class="contact-us__social-media">
+                <p class="contact-us__title">Acesse nossas redes:</p>
+                <ul class="contact-us__list"> 
+                    <!-- <li class="contact-us__item">Acesse redes:</li> -->
+                    <li class="contact-us__item"><a href="#" class="contact-us__link"><img src="../images/whatsapp.svg" alt="Logo do Whatsapp" class="contact-us__link-image"></a></li>
+                    <li class="contact-us__item"><a href="#" class="contact-us__link"><img src="../images/twitch.svg" alt="Logo do Twitch" class="contact-us__link-image"></a></li>
+                    <li class="contact-us__item"><a href="#" class="contact-us__link"><img src="../images/instagram.svg" alt="Logo do Instagram" class="contact-us__link-image"></a></li>
+                    <li class="contact-us__item"><a href="#" class="contact-us__link"><img src="../images/twitter.svg" alt="Logo do Twitter" class="contact-us__link-image"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contact-us disclaimer">
+            <p class="contact-us__text">Desenvolvido por Alura.</p>
+            <p class="contact-us__text">Projeto fictício sem fins comerciais.</p>
+        </div>
+
+    </footer>
+    
+</body>
+</html>

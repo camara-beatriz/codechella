@@ -1,0 +1,162 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    gap: 2rem;    
+}
+
+.container__image {
+    border-radius: 16px;    
+    width: 100%;
+    height: 381px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container__content {
+    flex-basis: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.container__content-title {
+    font-size: 32px;
+    font-weight: 700;    
+}
+
+.container__content h3 {
+    font-size: 20px;
+}
+
+.container__content-text {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.sector-title {
+    text-align: center;
+}
+
+/* MAPA PAGE  */
+.map__image {        
+    width: 100%;
+}
+
+.map__legend {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;    
+}
+
+.map__legend li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.legend__color {
+    display: inline-block;
+    width: 32px;
+    height: 32px;    
+}
+
+.legend-one {
+    background-color: #0E7DF1;
+}
+
+.legend-two {
+    background-color: #FE016E;
+}
+
+.legend-three {
+    background-color: #01A89E;
+}
+
+.legend-four {
+    background-color: #3F51B5;
+}
+
+.legend-five {
+    background-color: #0E7DF1;
+    background-image: url("../images/accessible.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sector-title {
+    padding: 2rem 1.5rem;
+}
+
+.sector__image {
+    border-radius: 16px;    
+    width: 100%;
+    max-width: 382.4px;
+    height: 239px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* TABLET SCREEN  */
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 2rem 3.75rem;
+    }
+
+    .container__content h3 {
+        font-size: 32px;
+    }
+
+    .map__image {
+        max-width: 43rem;
+    }
+
+    .sector-title {
+        font-size: 40px;
+        padding: 4rem 3.75rem;
+    }
+}
+
+/* DESKTOP SCREEN  */
+@media screen and (min-width: 1440px) {
+    .container {
+        flex-direction: row;
+        justify-content: center;
+        padding: 4rem 7.6rem;
+        gap: 3rem;       
+    }
+
+    /* PÁGINA A EXPERIÊNCIA  */
+    .container-reverse {
+        flex-direction: row-reverse;
+    }
+
+    /* PÁGINA MAPA  */    
+    .sector {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 3rem 7.5rem;
+        }
+
+    .sector__container {
+        flex-direction: column;
+        flex: 1 1 0;
+        padding: 0;
+        gap: 1.5rem;
+    }
+
+    .sector-title {
+        padding-top: 5rem;
+    }
+
+    .pista-premium {
+        padding-top: 6.6rem;
+    }
+}

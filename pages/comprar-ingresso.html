@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garanta seu Ingresso</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.svg">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    
+     <!-- HEADER -->
+     <header class="navbar">
+        <a href="../index.html"><img src="../images/Logo.svg" alt="Logo da CodeChella"></a>
+
+        <!-- MENU HAMBURGUER -->        
+        <div class="navbar__menu">
+            <input type="checkbox" id="menu" class="navbar__menu-button">
+            <label for="menu">
+                <span class="navbar__menu-hamburguer"></span>
+            </label>
+            <ul class="navbar__menu-list">
+                <li class="navbar__menu-item"><a href="./experiencia.html" class="navbar__menu-link">A experiência</a></li>
+                <li class="navbar__menu-item ruler"></li>
+                <li class="navbar__menu-item"><a href="./mapa.html" class="navbar__menu-link">Mapa de Setores</a></li>
+                <li class="navbar__menu-item ruler"></li>
+                <li class="navbar__menu-item"><a href="./informacoes.html" class="navbar__menu-link">Informações</a></li>
+                <li class="navbar__menu-item ruler"></li>
+                <li class="navbar__menu-item"><a href="./comprar-ingresso.html" class="navbar__menu-link">Ingresso</a></li>
+            </ul>
+        </div> 
+    </header>
+
+    <!-- MAIN  -->
+    <main>
+
+        <!-- BANNER -->
+        <section class="banner banner-comprar">
+            <h1 class="banner__title">Garanta seu Ingresso</h1>
+        </section>
+
+        <div class="background-gradient">
+
+            <!-- FORM  -->
+            <div class="container form">
+                <h2 class="form__title">Preencha o formulário a seguir:</h2>
+                <form action="#" class="form__container" id="form">
+
+                    <div class="form__item grid-col-span-2">
+                        <label for="name" class="form__label">Nome Completo:</label>
+                        <input id="name" type="text" name="name" maxlength="100">
+                    </div>
+
+                    <div class="form__item grid-col-span-2">
+                        <label for="email" class="form__label">Email:</label>
+                        <input id="email" type="email" name="email" maxlength="100">
+                    </div>
+
+                    <div class="form__item">
+                        <label for="ticket-type" class="form__label">Tipo de ingresso:</label>
+                        <select id="ticket-type" name="ticket-type">
+                            <option value="">Tipo de ingresso</option>
+                            <option value="Pista Premium">Pista Premium</option>
+                            <option value="Pista Comum">Pista Comum</option>
+                            <option value="Cadeiras Térreo">Cadeiras Térreo</option>
+                            <option value="Cadeiras Superiores">Cadeiras Superiores</option>
+                            <option value="Rampas">Rampas</option>
+                        </select>
+                    </div>   
+                    
+                    <div class="form__item">
+                        <label for="birthday" class="form__label">Data de nascimento:</label>
+                        <input id="birthday" type="date" name="birthday">
+                    </div>
+
+                    <div class="form__button grid-col-span-2">
+                        <button type="submit" class="select-button">Avançar!<img src="../images/arrow_forward.svg"></button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+   </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="contact-us">
+            <a href="../index.html"><img src="../images/Logo2.svg" alt="Logo da CodeChella"></a>
+            <div class="contact-us__social-media">
+                <p class="contact-us__title">Acesse nossas redes:</p>
+                <ul class="contact-us__list"> 
+                    <!-- <li class="contact-us__item">Acesse redes:</li> -->
+                    <li class="contact-us__item"><a href="#" class="contact-us__link"><img src="../images/whatsapp.svg" alt="Logo do Whatsapp" class="contact-us__link-image"></a></li>
+                    <li class="contact-us__item"><a href="#" class="contact-us__link"><img src="../images/twitch.svg" alt="Logo do Twitch" class="contact-us__link-image"></a></li>
+                    <li class="contact-us__item"><a href="#" class="contact-us__link"><img src="../images/instagram.svg" alt="Logo do Instagram" class="contact-us__link-image"></a></li>
+                    <li class="contact-us__item"><a href="#" class="contact-us__link"><img src="../images/twitter.svg" alt="Logo do Twitter" class="contact-us__link-image"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="contact-us disclaimer">
+            <p class="contact-us__text">Desenvolvido por Alura.</p>
+            <p class="contact-us__text">Projeto fictício sem fins comerciais.</p>
+        </div>
+
+    </footer>
+
+    <script>
+        const form = document.getElementById('form');
+        const name = document.getElementById('name');
+        const ticketType = document.getElementById('ticket-type');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const nameValue = name.value;
+            const ticketValue = ticketType.value;
+            
+            localStorage.setItem('name', nameValue);
+            localStorage.setItem('type', ticketValue);
+
+            window.location.href = "receber-ingresso.html";
+        })
+    </script>
+</body>
+</html>

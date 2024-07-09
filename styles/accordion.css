@@ -1,0 +1,74 @@
+/* MOBILE SCREEN  */
+.accordion {
+    padding: 3rem 1.5rem;
+}
+
+.accordion__title {
+    font-family: var(--font-title);
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.accordion__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.accordion__input {
+    display: none;
+}
+
+.accordion__label {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    padding: 1rem;
+}
+
+.accordion__arrow {
+    display: block;
+    background-image: url('../images/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.accordion__text {
+    display: none;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    background-color: var(--color-light-blue);
+    padding: 1rem;
+}
+
+.accordion__text a {
+    color: var(--color-gray)
+}
+
+.accordion__input:checked~ .accordion__text {
+    display: block;
+    margin-bottom: 1rem;    
+}
+
+
+/* TABLET SCREEN  */
+@media screen and (min-width: 768px) {
+    .accordion {
+        padding: 3rem 3.75rem;
+    }
+
+    .accordion__title {
+        font-size: 3rem;
+    }
+}
+
+/* DESKTOP SCREEN  */
+@media screen and (min-width: 1440px) {
+    .accordion {
+        padding: 3rem 7.5rem;
+    }
+}
